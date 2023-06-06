@@ -568,3 +568,6 @@ print("Average:", avg)                      # print("Average:", 30)
 #    result = fibonacci(num)
 #    print(f"The Fibonacci number at index {num} is: {result}")
 #    ```
+
+# i wan to add new commnet
+print("hello world")
