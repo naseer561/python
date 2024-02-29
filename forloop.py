@@ -8,31 +8,29 @@
     
 # 2.Iterate over a string and count the number of vowels.
 
-# word = "Hello,World !"                # String is the datatype for the given variable word
-
-# vowels = "aeiou"                
+# word = input("enter string:")                # #Hello,World !
+# vowels = input("enter vowels:")               #aEiou
 # count = 0                       
 
 # for char in word:               
-#     if char.lower() in vowels:  
-#         count += 1                  # count=1   # count = 3  
+#     if char.upper() in vowels.upper():  
+#         count += 1             #count=count+1                  # count=1   # count = 3  
 
 # print("Number of vowels:", count)  #once all the elements are calculated in sequence it will print the count in the output.
  
-# Example 3: Iterate over a range of numbers and calculate their sum.
+## Example 3: Iterate over a range of numbers and calculate their sum.
 
 # start = 1                                  
 # end = 10
 # sum = 0
 
 # for num in range(start, end+1):   # Start =1 ,End =10+1  range(1, 11)  from left it is inclusive and from right it is exclusive.
-#     sum += num                     # sum=0, num is the variable sum+=num(1-10 is the range)it will iterate until the end of the range and calculates the sum.
+#     sum += num                     #sum= sum+num
 #                                     # 1 sum= 1  sum = 3   sum=10
 # print("Sum of numbers from", start, "to", end, "is", sum)  #once it completes will print the given statement in the output.
 
-# # Example 4: Iterate over a dictionary and print key-value pairs.
+# Example 4: Iterate over a dictionary and print key-value pairs.
 # student_scores = {"John": 85, "Emma": 92, "Ryan": 78,"naseer":91}   # Dictionary is the datatype for the given variable student_scores
-#fvnqhlcgshlvealylvcgergffytpktgiveqcctsicslyqlenycn
 # count=0
 # names=[]
 # namestr=""
@@ -48,20 +46,24 @@
 
 # # 5.Iterate over a string and reverse its order.
 
-# text = "Hello, World!"                         # text variable is stored by value string "Hello World!"
-# reversed_text = "".join(reversed(text))                            #reversed_text="" is a funtion to reverse() the given string 
+text = "Hello, World!"                         # text variable is stored by value string "Hello World!"
+reversed_text = ""#.join(reversed(text))                            #reversed_text="" is a funtion to reverse() the given string 
 
-# # for char in text:                              # char is the variable in text(Hello , World!) the reversed function will itrate for each element and reverse the text.
-# #     reversed_text = char + reversed_text       # reversed_text=H, reversed_text=eh,reversed_text= !dlroW ,olleH
-# print("original text:", text)  
-# print("Reversed text:", reversed_text)         #once all the elements are reversed in sequence it will print this statement in the output.
-# print("Reversed text:", text[::-1])
+for char in text:                              # char is the variable in text(Hello , World!) the reversed function will itrate for each element and reverse the text.
+    reversed_text = char + reversed_text       # reversed_text=H, reversed_text=eh,reversed_text= !dlroW ,olleH
+print("original text:", text)  
+print("Reversed text:", reversed_text)         #once all the elements are reversed in sequence it will print this statement in the output.
 
+print("Reversed text:", text[::-1])
+print (reversed(text))
+print()
+
+## lista=['h','e','l','l','o']
+## #       0 ,  1,  2,  3,  4
+## print(lista[:])   # output= hell, hello, hello, hello
 # Example 1: Iterate over dictionary keys and print them.
 
 # student_scores = {"John": 85, "Emma": 92, "Ryan": 78}
-
-
 
 # for name in student_scores:
 #     print(student_scores[name])
@@ -94,13 +96,13 @@
 # char_counts = {}
 
 # for char in text:
-#     if char in char_counts:
-#         char_counts[char] += 1
+#     if char in char_counts:                 # {"H":1,"e":1,"l":2, "o":1, ",":1, " ":1, "W":1}
+#         char_counts[char] += 1              # char_counts["O"]= 2 +1  {"H":1,"e":1,"l":3, "o":2, ",":1, " ":1, "W":1}
 #     else:
-#         char_counts[char] = 1
+#         char_counts[char] = 1    # char_counts[","]=1   {"H":1,"e":1,"l":3, "o":1, ",":1, " ":1, "W":1, "r":1,"d":1,"!":1 }
 
 # for char, count in char_counts.items():
-    # print(char, ":", count)
+#     print(char, ":", count)
 
 
 
@@ -117,48 +119,79 @@
 
 # for name,score in passing_scores.items():
 #     print(name, ': ', score)
-# # print("Passing scores:", passing_scores)     #"Passing scores: {'John':85,'Emma':92,'Emily':90 }
+# print("Passing scores:", passing_scores.items())     #"Passing scores: {'John':85,'Emma':92,'Emily':90 }
 
 # 1.
 # numbers = [1, 2, 3, 4, 5]
 # for num in numbers:
 #     print(num)
 
-# # 2. For Loop with a Dictionary:
-#     # Iterating over a dictionary
+# 2. For Loop with a Dictionary:
+    # Iterating over a dictionary
 # student_grades = {"John": 85, "Emily": 92, "Ryan": 78}
 # for name, grade in student_grades.items():
 #     print(f"{name}: {grade}")
+#     print(name,": ",grade)
 #     # print(f" {name}: {grade}")
 
 
 # 3.For Loop with Enumerate:
 # # Enumerating a list
 # fruits = ["apple", "banana", "orange"]
-# for index, fruit in enumerate(fruits):
-#     if index !=0:                                   #0!=0 False
-#         print(f"Index: {index}, Fruit: {fruit}")    #
+# for index, fruit in enumerate(fruits):                  # for 2,"orange" ind enumrate(fruits)
+#     if index !=0:                                           #  2!=0 True
+#         print(f"Index: {index}, Fruit: {fruit}")    #   "Index: 2, Fruit: orange"
 
 
-# 4.Nested For Loop:
-# Nested for loop
+# # 4.Nested For Loop:
+# # Nested for loop
 # colors = ["red", "green", "blue"]
 # sizes = ["small", "medium", "large"]
 # for color in colors:                             #for  "red" in ["red", "green", "blue"]
-#     for size in sizes:
-#         continue                                 # for "small" in  ["small", "medium", "large"]    
+#     for size in sizes:                                # for "small" in  ["small", "medium", "large"]  
 #         print(f"Color: {color}, Size: {size}")
+#         break  
 #     print("hi")
 
 # 5.For Loop with Break and Continue:
 # Using break and continue in a loop
 # numbers = [1, 2, 3, 4, 5]
 # for num in numbers:
-#     if num == 3:
-#         break   # exit from for  inner loop
 #     if num == 5:
+#         break   # exit from for  inner loop
+#         print(num)
+#     if num == 3:
 #         continue  # go to for loop  inner again
+#         print(num)
 #     print(num)
+#example 6:
+# numbers = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+
+# for num, word in numbers.items():
+#     if num % 2 == 0:
+#         continue
+#     else:
+#         for i in range(2, num):  #2,3,4,5,6
+#             if num % i == 0:
+#                 break
+#         else:
+#             print(num, word)
+
+
+# numbers = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+
+# for num, word in numbers.items():
+#     if num % 2 == 0:
+#         if num % 3 == 0:
+#             break
+#         else:
+#             print(num, word)
+
+
+
+
+
+
 
 
 # # 1.Calculating Average Grades:
@@ -346,17 +379,17 @@
 
 # Example 1: Calculating the average of a list of numbers using a function.
 # ```python
-def calculate_average(numbers):
-    total = sum(numbers)                      #  total=sum([10, 20, 30, 40, 50])= 150
-    average = total / len(numbers)             # average= 150/5 = 30
-    return average                             # retrun 30
+# def calculate_average(numbers):
+#     total = sum(numbers)                      #  total=sum([10, 20, 30, 40, 50])= 150
+#     average = total / len(numbers)             # average= 150/5 = 30
+#     return average                             # retrun 30
 
-num_list = [10, 20, 30, 40, 50]
-avg = calculate_average(num_list)     #   avg = calculate_average([10, 20, 30, 40, 50])= 30
-print("Average:", avg)                      # print("Average:", 30)
+# num_list = [10, 20, 30, 40, 50]
+# avg = calculate_average(num_list)     #   avg = calculate_average([10, 20, 30, 40, 50])= 30
+# print("Average:", avg)                      # print("Average:", 30)
 
 
-# ```
+# # ```
 
 # Example 2: Counting the frequency of words in a sentence using a dictionary and a function.
 # ```python
@@ -570,4 +603,4 @@ print("Average:", avg)                      # print("Average:", 30)
 #    ```
 
 # i wan to add new commnet
-print("hello world")
+# print("hello world")

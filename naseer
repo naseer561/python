@@ -1,0 +1,6 @@
+student_dict = {'dhoni':'batsman', 2:'Pooja', 3:'Roja', 4:'Mazaaa',5:'Raja'}
+
+for key, student in student_dict.items():
+    if student == 'batsman' :
+        print(key)
+
