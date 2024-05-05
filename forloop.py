@@ -46,17 +46,17 @@
 
 # # 5.Iterate over a string and reverse its order.
 
-text = "Hello, World!"                         # text variable is stored by value string "Hello World!"
-reversed_text = ""#.join(reversed(text))                            #reversed_text="" is a funtion to reverse() the given string 
+# text = "Hello, World!"                         # text variable is stored by value string "Hello World!"
+# reversed_text = ""#.join(reversed(text))                            #reversed_text="" is a funtion to reverse() the given string 
 
-for char in text:                              # char is the variable in text(Hello , World!) the reversed function will itrate for each element and reverse the text.
-    reversed_text = char + reversed_text       # reversed_text=H, reversed_text=eh,reversed_text= !dlroW ,olleH
-print("original text:", text)  
-print("Reversed text:", reversed_text)         #once all the elements are reversed in sequence it will print this statement in the output.
+# for char in text:                              # char is the variable in text(Hello , World!) the reversed function will itrate for each element and reverse the text.
+#     reversed_text = char + reversed_text       # reversed_text=H, reversed_text=eh,reversed_text= !dlroW ,olleH
+# print("original text:", text)  
+# print("Reversed text:", reversed_text)         #once all the elements are reversed in sequence it will print this statement in the output.
 
-print("Reversed text:", text[::-1])
-print (reversed(text))
-print()
+# print("Reversed text:", text[::-1])
+# print ("".join(reversed(text)))
+# print()
 
 ## lista=['h','e','l','l','o']
 ## #       0 ,  1,  2,  3,  4

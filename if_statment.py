@@ -148,24 +148,24 @@
 
 # Example 5: Classify a number into positive, negative, or zero, and then further categorize positive numbers.
 # # # python
-num = float(input("Enter a number: "))                              #10.0
+# num = float(input("Enter a number: "))                              #10.0
 
-if num > 0:
-    if num < 10:
-        category = "Single Digit Positive Number"
-    else:
-        if num < 100:
-            category = "Two-digit Positive Number"
-        else:
-            category = "Positive Number"
-        print("1")
-    print("2")        
-elif num < 0:
-    category = "Negative Number"
-else:
-    category = "Zero"
+# if num > 0:
+#     if num < 10:
+#         category = "Single Digit Positive Number"
+#     else:
+#         if num < 100:
+#             category = "Two-digit Positive Number"
+#         else:
+#             category = "Positive Number"
+#         print("1")
+#     print("2")        
+# elif num < 0:
+#     category = "Negative Number"
+# else:
+#     category = "Zero"
 
-print("The number belongs to the", category, "category.")
+# print("The number belongs to the", category, "category.")
 
 # import os
 
